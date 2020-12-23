@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<title>The night manager</title>
+</head>
+<body>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="assets/kairo_jp.jpg" alt="Kairo landscape" style="width:100%">
+      <div class="text">Cairo, Egypt</div>
+      <div class="description">I have worked as a night manager in Cairo. But soon my whole life changed due to my loyalty to the Queen and because of another woman who stole some documents and my heart too.<br>Our short and sweet romance ran into a dark and bloody ending soon so I felt that I had to left Cairo.<br>I returned several years later, when I had the possibility to "complete all my unfinished projects".<br>And I can tell, I did it very well...</div>
+    </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="assets/switzerland_js.jpg" alt="Switzerland landscape" style="width:100%">
+    <div class="text">Zermatt, Switzerland</div>
+    <div class="description"> In Switzerland I have been working again as a night manager at a remote hotel. I just wanted to hide away from the world, but my destiny found me when Mr. Roper and his company arrived. That occasion drove me to volunteere for a task. <br> I met here Mrs. Burr first, she was my very best menthor. But on  her "influence" I had to leave my whole past behind... </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="assets/mallorca_jp.jpg" alt="Maillorca landscape" style="width:100%">
+    <div class="text">Mallorca, Spain</div>
+    <div class="description">In Maillorca first I've worked as a cook in a small seaside restaurant, but "all of a sudden" and in a "suprisingly unexpected way" I found myself in a very different situation due to a heroic action, when I saved Mr. Roper's son from kidnappers.<br>After I recovered from my injuries I got very wide range of responsibilities here. First I just looked after the son of Mr. Roper but soon he discoveres my hidden skills and I became his partner in business, made a weapon demostration for his foreign partners.<br>I did here a few things that isn't make me proud, but got some very important experience...</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+  
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<br>
+  
+<div class="rip">
+  <img src="assets/le_carre.jpg" alt="John Le Carré" style="width:100%">
+  <div class="memory">In memory of my beloved creator:<br>John Le Carré<br>(1931-2020)</div>
+</div>
+<br>
+<section class="mivan">
+  <h2>Contact me via:</h2>
+<a href="" target="_blank" title="Official Facebook site" class="social-icon"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+          </a>
+</section>
+  
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
