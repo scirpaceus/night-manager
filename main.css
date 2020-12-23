@@ -127,17 +127,17 @@ img {vertical-align: middle;}
   opacity:1;
 }
 
-.mivan{
+.contacts{
   max-width: 1000px;
   position: relative;
   margin: auto;
   text-align: center;
-  background-color: aqua;
+  color:white;
 }
 
 /* On smaller screens, decrease text and picture size */
 @media only screen and (max-width: 600px) {
-  .prev, .next,.text,{
+  .prev, .next,.text, .contacts{
     font-size: 14px
   }
   .description {
